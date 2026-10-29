@@ -1,0 +1,92 @@
+{
+  "binary": {
+    "logistic_regression": {
+      "accuracy": 0.7542,
+      "precision": 0.9169,
+      "recall": 0.6249,
+      "f1": 0.7432,
+      "roc_auc": 0.7916
+    },
+    "random_forest": {
+      "accuracy": 0.7748,
+      "precision": 0.968,
+      "recall": 0.6251,
+      "f1": 0.7597,
+      "roc_auc": 0.9625
+    }
+  },
+  "family": {
+    "accuracy": 0.7384,
+    "macro_f1": 0.4739,
+    "per_class_recall": {
+      "Normal": 0.9736,
+      "DoS": 0.7684,
+      "Probe": 0.5931,
+      "R2L": 0.008,
+      "U2R": 0.0149
+    }
+  },
+  "generalization": {
+    "known_attack_rows": 9083,
+    "known_attack_recall": 0.7697,
+    "novel_attack_rows": 3750,
+    "novel_attack_recall": 0.2664,
+    "novel_attack_types": [
+      "apache2",
+      "httptunnel",
+      "mailbomb",
+      "mscan",
+      "named",
+      "processtable",
+      "ps",
+      "saint",
+      "sendmail",
+      "snmpgetattack",
+      "snmpguess",
+      "sqlattack",
+      "udpstorm",
+      "worm",
+      "xlock",
+      "xsnoop",
+      "xterm"
+    ]
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.5,
+      "recall": 0.6251,
+      "false_alarm_rate": 0.0273,
+      "precision": 0.968
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.6751,
+      "false_alarm_rate": 0.0292,
+      "precision": 0.9683
+    },
+    {
+      "threshold": 0.3,
+      "recall": 0.7202,
+      "false_alarm_rate": 0.0333,
+      "precision": 0.9662
+    },
+    {
+      "threshold": 0.2,
+      "recall": 0.7819,
+      "false_alarm_rate": 0.0412,
+      "precision": 0.9617
+    },
+    {
+      "threshold": 0.1,
+      "recall": 0.8654,
+      "false_alarm_rate": 0.0967,
+      "precision": 0.922
+    },
+    {
+      "threshold": 0.05,
+      "recall": 0.9554,
+      "false_alarm_rate": 0.1076,
+      "precision": 0.9215
+    }
+  ]
+}
