@@ -7,3 +7,4 @@ __pycache__/
 # Downloaded data and trained models are rebuilt by the scripts
 01-network-intrusion-detection/data/
 01-network-intrusion-detection/models/
+02-prompt-injection-scanner/models/
